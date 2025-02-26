@@ -1,0 +1,36 @@
+{
+  "name": "option_paiy-2.0",
+  "version": "1.0.0",
+  "description": "A project integrating AI IDE with GitHub and StackBlitz for seamless development workflow",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codemethemoney/OPTION_PAiY-2.0.git"
+  },
+  "keywords": [
+    "ai",
+    "ide",
+    "github",
+    "stackblitz",
+    "workflow"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Codemethemoney/OPTION_PAiY-2.0/issues"
+  },
+  "homepage": "https://github.com/Codemethemoney/OPTION_PAiY-2.0#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  }
+}
