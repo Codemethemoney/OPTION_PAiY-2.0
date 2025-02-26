@@ -1,8 +1,12 @@
+// Import the ExampleComponent (in a real application)
+// const ExampleComponent = require('../src/components/ExampleComponent');
+
 // DOM elements
 const apiStatusElement = document.getElementById('api-status');
 const helloMessageElement = document.getElementById('hello-message');
 const refreshStatusButton = document.getElementById('refresh-status');
 const refreshHelloButton = document.getElementById('refresh-hello');
+const exampleComponentContainer = document.getElementById('example-component-container');
 
 // Function to fetch API status
 async function fetchApiStatus() {
@@ -57,4 +61,37 @@ refreshHelloButton.addEventListener('click', fetchHelloMessage);
 document.addEventListener('DOMContentLoaded', () => {
   fetchApiStatus();
   fetchHelloMessage();
+  renderExampleComponent();
 });
+
+// Function to render the example component
+function renderExampleComponent() {
+  // In a real application, we would import the component
+  // For this example, we'll create a simplified version inline
+  
+  const container = document.createElement('div');
+  container.className = 'example-component';
+  
+  const titleElement = document.createElement('h2');
+  titleElement.textContent = 'Example Component';
+  
+  const messageElement = document.createElement('p');
+  messageElement.textContent = 'This is an example component created with AI assistance.';
+  
+  const button = document.createElement('button');
+  button.className = 'action-button';
+  button.textContent = 'Click Me';
+  button.addEventListener('click', () => {
+    alert('Button clicked! This demonstrates the integration between AI IDE, GitHub, and StackBlitz.');
+  });
+  
+  container.appendChild(titleElement);
+  container.appendChild(messageElement);
+  container.appendChild(button);
+  
+  // Clear any existing content
+  if (exampleComponentContainer) {
+    exampleComponentContainer.innerHTML = '';
+    exampleComponentContainer.appendChild(container);
+  }
+}

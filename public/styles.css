@@ -86,6 +86,36 @@ button:hover {
   background-color: #2980b9;
 }
 
+/* Example Component styles */
+.example-component {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  margin-top: 15px;
+}
+
+.example-component h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  border-bottom: none;
+  padding-bottom: 5px;
+}
+
+.example-component p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.example-component .action-button {
+  background-color: #27ae60;
+}
+
+.example-component .action-button:hover {
+  background-color: #219653;
+}
+
 /* Footer styles */
 footer {
   text-align: center;
